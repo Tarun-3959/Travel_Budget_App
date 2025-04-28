@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 logout.addEventListener("click", () => {
   localStorage.removeItem("token");
-  window.location.href = "../pages/index.html";
+  window.location.href = "../pages/signin.html";
 });
 
 function deleteTrip(id) {

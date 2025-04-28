@@ -28,6 +28,8 @@ document.getElementById("form").addEventListener("submit", (event) => {
       .then((res) => res.json())
       .then((data) => {
         if (data.message) {
+          alert("Your account is created");
+          window.location.href = "../pages/signin.html";
           console.log(data);
         } else {
           alert(data.errorMessage);
