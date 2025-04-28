@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: "Segoe UI", sans-serif;
+  height: 94vh;
+  background: url("../images/bg_second.jpg") no-repeat center center/cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  backdrop-filter: brightness(0.9);
+}
+
+h1 {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+  color: #5d8a81;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  color: rgb(61, 57, 52);
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #5d8a81;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: #c7b0b0;
+}
+
+footer {
+  text-align: center;
+  background-color: #333333;
+  color: #cccccc;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+#header {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 2em;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  backdrop-filter: blur(10px) brightness(0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+#logo h1 a {
+  font-family: "Knewave", cursive;
+  font-size: 2.5rem;
+  color: #5d8a81;
+  text-decoration: none;
+}
+
+#nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#nav ul li a {
+  padding: 8px 16px;
+  border: 2px solid #5d8a81;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#nav ul li a:hover {
+  background-color: #5d8a81;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  #nav ul {
+    gap: 8px;
+  }
+  #header {
+    padding: 0 1rem;
+  }
+  #logo h1 a {
+    font-size: 1.5rem;
+  }
+
+  #nav ul li a {
+    padding: 4px 8px;
+    border: 2px solid #5d8a81;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 0.7rem;
+  }
+}

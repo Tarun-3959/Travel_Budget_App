@@ -1,0 +1,78 @@
+#heading1 {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  color: #5d8a81;
+}
+
+#paragraph1 {
+  font-size: 1.2rem;
+  max-width: 600px;
+  color: rgb(61, 57, 52);
+}
+
+.trip-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: -70px;
+}
+
+.category-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  width: auto;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.disable {
+  visibility: hidden;
+}
+
+.enable {
+  visibility: visible;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .trip-form {
+    padding: 20px;
+  }
+
+  .trip-form button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}

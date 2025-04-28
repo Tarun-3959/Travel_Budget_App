@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - Trip Tally</title>
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/signUpAndIn.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="header" class="">
+        <div id="logo">
+          <h1><a href="../pages/index.html">Trip Tally</a></h1>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="../pages/index.html">Homepage</a>
+            </li>
+            <li>
+              <a href="../pages/signin.html">Sign in</a>
+            </li>
+            <li>
+              <a href="../pages/signup.html">Sing up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1>Create Your Account</h1>
+      <p>Join us and start managing your travel expenses easily.</p>
+
+      <form id="form" class="auth-form" action="/signup" method="POST">
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Full Name"
+          required
+        /><br />
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        /><br />
+        <input
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        /><br />
+        <button id="submitBtn" type="submit" class="btn">Sign Up</button>
+        <span class="disable" id="waitMsgTag">Please wait...</span>
+      </form>
+    </div>
+
+    <footer>&copy; 2025 Travel Budget Planner. All rights reserved.</footer>
+    <script src="../scripts/signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.auth-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.auth-form input {
+  width: 250px;
+  padding: 10px;
+  border: 2px solid #5d8a81;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  font-size: 1rem;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #5d8a81;
+}
+
+.auth-form button {
+  width: 250px;
+}
+
+.disable {
+  visibility: hidden;
+}
+.enable {
+  visibility: visible;
+}
+
+#waitMsgTag {
+  color: rgb(61, 57, 52);
+  margin-top: -55px;
+  font-size: 30px;
+}

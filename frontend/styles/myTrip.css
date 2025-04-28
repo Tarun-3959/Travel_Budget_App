@@ -1,0 +1,87 @@
+.trips-page {
+  min-height: 100vh;
+  padding-top: 120px; /* Extra space below fixed header */
+}
+
+.trip-actions {
+  margin: 20px 0;
+}
+
+.trips-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.trip-card {
+  background: rgba(255, 255, 255, 0.85);
+  color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  width: auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.trip-card-buttons-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.trip-card-buttons-div button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
+.trip-card-buttons-div button:hover {
+  cursor: pointer;
+  background-color: #5d8a81;
+}
+
+.trip-card:hover {
+  transform: scale(1.03);
+}
+
+.trip-card h2 {
+  color: #5d8a81;
+  margin-bottom: 10px;
+}
+
+.trip-card p {
+  margin: 5px 0;
+}
+
+.trip-card button {
+  margin-top: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .trip-card {
+    width: 90%;
+  }
+
+  .trip-actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  .trip-actions a .btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .trips-page h1 {
+    font-size: 2rem;
+  }
+
+  .trips-page p {
+    font-size: 1rem;
+    margin: 10px 0 20px 0;
+  }
+}

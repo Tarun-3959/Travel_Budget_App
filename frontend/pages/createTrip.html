@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Trip - Trip Tally</title>
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/createTrip.css" />
+  </head>
+  <body>
+    <div class="container trips-page">
+      <div id="header">
+        <div id="logo">
+          <h1><a>Trip Tally</a></h1>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="../pages/myTrip.html">My Trips</a></li>
+            <li><a id="logout">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <h1 id="heading1">Create New Trip</h1>
+      <p id="paragraph1">Plan your next adventure smartly!</p>
+      <div>
+        <form
+          id="createTripForm"
+          class="trip-form"
+          action="mytrips.html"
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="tripName">Trip Name</label>
+            <input
+              type="text"
+              id="tripName"
+              name="tripName"
+              placeholder="e.g., Goa Vacation"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="destination">Destination</label>
+            <input
+              type="text"
+              id="destination"
+              name="destination"
+              placeholder="e.g., Goa"
+            />
+          </div>
+          <!--
+        
+        <div class="form-group">
+          <label for="budget">Total Budget (₹)</label>
+          <input
+            type="number"
+            id="budget"
+            name="budget"
+            placeholder="e.g., 15000"
+            required
+          />
+        </div>
+-->
+          <div class="form-group">
+            <label for="startDate">Start Date</label>
+            <input type="date" id="startDate" name="startDate" />
+          </div>
+
+          <div class="form-group">
+            <label for="endDate">End Date</label>
+            <input type="date" id="endDate" name="endDate" />
+          </div>
+          <!--
+         <div id="categoriesSection">
+          <h3>Categories</h3>
+        </div>
+
+        <button type="button" id="addCategoryBtn">Add Category</button>
+       
+        -->
+
+          <button type="submit" class="btn">Next</button>
+        </form>
+        <form id="addCategoryForm" class="disable trip-form">
+          <!--
+           <div class="form-group">
+          <label for="budget">Total Budget (₹)</label>
+          <input
+            type="number"
+            id="budget"
+            name="budget"
+            placeholder="e.g., 15000"
+            required
+          />
+        </div>     
+        -->
+
+          <div id="categoriesSection">
+            <h3>Categories</h3>
+          </div>
+
+          <button type="button" id="addCategoryBtn">Add Category</button>
+          <div>
+            <button id="goBackBtn" class="btn">back</button>
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>&copy; 2025 Travel Budget Planner. All rights reserved.</footer>
+    <script type="module" src="../scripts/createTrip.js"></script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+#header {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 2em;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px) brightness(0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+#logo h1 a {
+  font-family: "Knewave", cursive;
+  font-size: 2.5rem;
+  color: #5d8a81;
+  text-decoration: none;
+}
+
+#nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#nav ul li a {
+  padding: 8px 16px;
+  border: 2px solid #5d8a81;
+  border-radius: 6px;
+  color: #b82020;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#nav ul li a:hover {
+  background-color: #5d8a81;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.tripDetailContainer {
+  margin-top: 100px;
+  font-family: "Segoe UI", sans-serif;
+  height: 94vh;
+  background: url("../images/bg_second.jpg") no-repeat center center/cover;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  backdrop-filter: brightness(0.9);
+}
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.trip-details {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.trip-details h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.trip-details p {
+  margin: 5px 0;
+  color: #555;
+}
+
+#addExpensesBtn {
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: 700;
+}
+
+#expensesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: auto;
+}
+.expenses-section {
+  flex-wrap: wrap;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.expenses-section h2 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.expense-item {
+  background: #ffffff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.expense-item p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.trip-form {
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  background: rgba(255, 255, 255);
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: -70px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.analyze-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+}
+
+.analyze-btn:hover {
+  background-color: #45a049;
+}
+
+.analysis-info {
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .trip-details,
+  .expenses-section {
+    padding: 15px;
+  }
+  .analyze-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+.disable {
+  visibility: hidden;
+}
+.enable {
+  visibility: visible;
+}

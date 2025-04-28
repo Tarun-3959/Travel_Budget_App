@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Details</title>
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/tripDetail.css" />
+  </head>
+  <body>
+    <div id="header" class="">
+      <div id="logo">
+        <h1><a>Trip Tally</a></h1>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="../pages/myTrip.html">MyTrips</a>
+          </li>
+          <li>
+            <a id="Logout">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="tripDetailContainer">
+      <div id="tripDetails" class="trip-details">
+        <!-- Trip details will be shown here -->
+      </div>
+
+      <div id="expensesSection" class="expenses-section">
+        <h2>Expenses</h2>
+        <div id="expensesList">
+          <!-- Expenses will be listed here -->
+        </div>
+      </div>
+      <button id="addExpensesBtn" class="disable">Add Expenses</button>
+      <form id="addNewExpenseForm" class="trip-form disable">
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" name="category" required></select>
+          <button id="addNewCategoryBtn" type="button">Add New Category</button>
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input
+            type="number"
+            min="0"
+            ,
+            max="1000000"
+            id="amount"
+            name="amount"
+            placeholder="e.g., 2000"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">description</label>
+          <input type="text" id="description" name="description" />
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <button type="submit" id="addExpense">Add Expense</button>
+      </form>
+      <form id="addNewCategoryForm" class="trip-form disable">
+        <div class="form-group">
+          <label for="name">category</label>
+          <input
+            type="text"
+            id="category"
+            name="name"
+            placeholder="e.g., Food"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="budget">budget</label>
+          <input
+            type="number"
+            min="0"
+            max="1000000"
+            id="budget"
+            name="budget"
+            placeholder="e.g., 10000"
+            required
+          />
+        </div>
+        <button type="submit">Add Category</button>
+      </form>
+
+      <button id="categoryWiseExpensesBtn" class="analyze-btn disable">
+        Category Wise Expenses
+      </button>
+      <button id="budgetVsSpentsBtn" class="analyze-btn disable">
+        Budget vs Spent
+      </button>
+      <button id="dayWiseExpensesBtn" class="analyze-btn disable">
+        Day Wise Expenses
+      </button>
+      <div id="analysisDataDiv">
+        <div id="categoryWiseDiv" class="analysis-info"></div>
+        <div id="budgetVsSpentsDiv" class="analysis-info"></div>
+        <div id="dayWiseDiv" class="analysis-info"></div>
+      </div>
+    </div>
+    <script src="../scripts/tripDetails.js" type="module"></script>
+  </body>
+</html>
